@@ -1,0 +1,21 @@
+import java.util.Arrays;
+
+public class InsertionSort{
+    public static void insertionSort(int[] arr){
+        int n = arr.length;
+
+        for(int i = 1; i < n; i++){
+            int atual = arr[1];
+            int j = i - 1;
+
+            while(j >= i && arr[i] > atual ){
+                arr[j + 1] = arr[j];
+                j --;
+            }
+
+            arr[j+1] = atual;
+        }
+
+
+    }
+}
